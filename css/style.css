@@ -1,0 +1,134 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  background-color: #f0f4f8;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.header__titulo {
+  margin: 0 0 5rem 0;
+  padding: 1.5rem;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .main {
+    height: auto;
+  }
+}
+
+.conversor {
+  background-color: #e9ecef;
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .conversor {
+    width: auto;
+  }
+}
+
+.conversor__datos,
+.conversor__resultado {
+  padding: 5rem 3rem;
+  border: none;
+}
+
+.conversor__datos {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .conversor__datos {
+    text-align: left;
+  }
+}
+
+.conversor__campos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .conversor__campos {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.conversor__label {
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.conversor__input {
+  display: block;
+  border: 1px solid #c0c0c0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .conversor__input {
+    text-align: left;
+  }
+}
+
+.conversor__resultado {
+  border-top: 1px solid #000;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  padding-block: 3rem;
+}
+
+@media (min-width: 768px) {
+  .conversor__resultado {
+    justify-content: start;
+  }
+}
+
+.campo__texto,
+.campo__resultado {
+  margin: 0;
+  font-size: 2rem;
+}

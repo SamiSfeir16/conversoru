@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Conversor</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__titulo">Conversor de Unidades</h1>
+    </header>
+
+    <main class="main">
+      <form class="conversor">
+        <fieldset class="conversor__datos">
+          <div class="conversor__campos">
+            <div class="conversor__campo">
+              <label for="unidades__select" class="conversor__label"
+                >Seleccione el tipo de conversión:</label
+              >
+              <select id="unidades__select" class="conversor__input">
+                <option value="" disabled selected>---Seleccione---</option>
+                <option value="1">Temperatura (Celcius a Fahrenheit)</option>
+                <option value="2">Longitud (Metros a Pies)</option>
+                <option value="3">Peso (Kilogramos a Libras)</option>
+              </select>
+            </div>
+
+            <div class="conversor__campo">
+              <label for="conversor__valor" class="conversor__label"
+                >Valor a Convertir:</label
+              >
+              <input
+                type="number"
+                id="conversor__valor"
+                class="conversor__input"
+                value="0"
+              />
+            </div>
+
+            <!-- <input type="submit" class="btn__convertir" value="Convertir" /> -->
+          </div>
+        </fieldset>
+        <fieldset class="conversor__resultado">
+          <p class="campo__texto">Conversión:</p>
+          <p class="campo__resultado">0</p>
+        </fieldset>
+      </form>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
